@@ -20,6 +20,7 @@ Categories listed below with links to documentation where possible, as well as o
 
 ## Dependency Injection (DI) and Inversion of Control (IoC)
 - [Autofac, DI and IoC container](https://autofac.org/)
+   - [Available scopes](https://autofaccn.readthedocs.io/en/latest/lifetime/instance-scope.html)   
 - [.NET Built-in DI](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 - DI/IoC Theory and Design Patterns 
    - [Good primer video on DI in .NET](https://www.youtube.com/watch?v=0x2KW-dJDQU&ab_channel=JetBrainsTV)
