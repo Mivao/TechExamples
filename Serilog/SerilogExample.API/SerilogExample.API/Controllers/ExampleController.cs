@@ -26,6 +26,18 @@ namespace SerilogExample.API.Controllers
             return Ok("Hello!");
         }
 
+        [HttpGet("{numberToCountTo}")]
+        public async Task<IActionResult> LogSomeNumbers(int numberToCountTo)
+        {
+            for(int i = 1; i <= numberToCountTo; i++)
+            {
+                _logger.LogInformation("The current value of i is {LoopCountValue}", i);
+            }
+
+            return Ok($"Logged numbers up to {numberToCountTo}");
+            
+        }
+
         [HttpPost]
         public async Task<IActionResult> ExampleException()
         {
