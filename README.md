@@ -15,8 +15,8 @@ Categories listed below with links to documentation where possible, as well as o
 
 ## Database
 - SQL Server
-- Availability Groups (HA, High Availability)
-- SQL Agent Jobs
+- [Availability Groups (HA, High Availability)](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-ver15)
+- [SQL Agent Jobs](https://docs.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver15)
 
 ## Dependency Injection (DI) and Inversion of Control (IoC)
 - [Autofac, DI and IoC container](https://autofac.org/)
