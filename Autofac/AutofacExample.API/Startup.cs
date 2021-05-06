@@ -36,8 +36,10 @@ namespace AutofacExample.API
 
             // Singleton time provider for the whole container
             builder.RegisterType<TimeProvider>().As<ITimeProvider>().SingleInstance();
-            
-            builder.RegisterType<ExampleService>().As<IExampleService>();
+
+            // For integration with ASP.NET Core 3.0+ InstancePerLifetime should be used to achieve InstancePerRequest behaviour
+            // See the first dot point here: https://autofaccn.readthedocs.io/en/latest/integration/aspnetcore.html?highlight=UseServiceProviderFactory#differences-from-asp-net-classic
+            builder.RegisterType<ExampleService>().As<IExampleService>().InstancePerLifetimeScope();
             builder.RegisterType<ExampleProvider>().As<IExampleProvider>();
 
             builder.RegisterAssemblyModules(typeof(Startup).Assembly);
