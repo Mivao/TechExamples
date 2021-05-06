@@ -18,15 +18,28 @@ namespace SerilogExample.API
                 .AddJsonFile("appsettings.json")
                 .Build();
 
+            //Setup the primary logger with a filtered sublogger
             Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(configuration)
+                .ReadFrom.Configuration(configuration, "PrimaryLogger")
+                .WriteTo.Logger(lc => lc.ReadFrom.Configuration(configuration, "FilteredLogger"))
                 .CreateLogger();
 
-            //Statically log the string to information level in log. No d
-            Log.Information("Application Starting Up");
-            CreateHostBuilder(args).Build().Run();
-            //Required to send out the logs.
-            Log.CloseAndFlush();
+
+            try
+            {
+                //Statically log the string to information level in log. No d
+                Log.Information("Application Starting Up");
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Host terminated unexpectedly");
+            }
+            finally
+            {
+                //Required to send out the logs.
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

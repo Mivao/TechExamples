@@ -34,10 +34,13 @@ Categories listed below with links to documentation where possible, as well as o
 
 ## Cryptography
 - Symmetric/Asymmetric Cryptography
+   - [A Brief Explainer](https://www.youtube.com/watch?v=AQDCe585Lnc)
+   - [More detail on RSA Encryption](https://www.comparitech.com/blog/information-security/rsa-encryption/) (A bit of Maths involved)
 - PGP Encryption & Signing
+   - [A Library for PGP in C#](https://github.com/mattosaurus/PgpCore) 
 
 ## Other
 - [Dapper - a simple object mapper for .NET](https://github.com/DapperLib/Dapper)
 - [Polly - a .NET resilience and transient-fault-handling library](https://github.com/App-vNext/Polly)
-- [Newtonsoft - JSON parsing, serialisaztion, and deserialization](https://www.newtonsoft.com/json)
+- [Newtonsoft - JSON parsing, serialization, and deserialization](https://www.newtonsoft.com/json)
 - [Solace Event Broker](https://docs.solace.com/Solace-PubSub-Platform.htm)
