@@ -10,7 +10,7 @@ Categories listed below with links to documentation where possible, as well as o
 
 ## Operations
 - [Serilog, simple .NET logging with fully-structured events](https://serilog.net/)
-   - [Comprehensive Serilog Tutorial](https://www.youtube.com/watch?v=_iryZxv8Rxw) 
+   - [Serilog Tutorial - Covers the Basics](https://www.youtube.com/watch?v=_iryZxv8Rxw) 
 - [NLog](https://nlog-project.org/) (Used in older projects)
 
 ## Database
