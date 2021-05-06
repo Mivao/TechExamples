@@ -1,0 +1,7 @@
+To generate code from swagger (server needs to be running so it can pull the json)
+
+Navigate to the subfolder:
+cd .\SwaggerCodegen.Codegen
+
+Then generate:
+java -jar swagger-codegen-cli.jar generate -i https://localhost:44327/swagger/v1/swagger.json -l csharp -D io.swagger.v3.parser.util.RemoteUrl.trustAll=true

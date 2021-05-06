@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerCodegen.ExampleAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerCodegen.ExampleAPI.Controllers.ItemsController.getAsync(System.Int32)">
+            <summary>
+            Gets an Item based on a supplied Id.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerCodegen.ExampleAPI.Controllers.ItemsController.postAsync(SwaggerCodegen.ExampleAPI.Db.Item)">
+            <summary>
+            Adds a new Item to the database
+            </summary>
+            <param name="Item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerCodegen.ExampleAPI.Controllers.ItemsController.updateAsync(SwaggerCodegen.ExampleAPI.Db.Item)">
+            <summary>
+            Updates an existing Item
+            </summary>
+            <param name="Item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerCodegen.ExampleAPI.Controllers.ItemsController.deleteAsync(System.Int32)">
+            <summary>
+            Deletes an item from the database
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
