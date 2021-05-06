@@ -1,12 +1,8 @@
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using OpenTelemetry.Logs;
 
 namespace AutofacExample.API
 {
@@ -24,6 +20,19 @@ namespace AutofacExample.API
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                })
+                .ConfigureLogging((context, builder) =>
+                {
+                    builder.ClearProviders();
+                    builder.AddConsole();
+
+                    builder.AddOpenTelemetry(options =>
+                    {
+                        options.IncludeScopes = true;
+                        options.ParseStateValues = true;
+                        options.IncludeFormattedMessage = true;
+                        options.AddConsoleExporter();
+                    });                    
                 });
     }
 }

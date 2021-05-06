@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using OpenTelemetry.Instrumentation.AspNetCore;
+using OpenTelemetry.Trace;
 
 namespace AutofacExample.API
 {
@@ -27,6 +29,23 @@ namespace AutofacExample.API
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AutofacExample.API", Version = "v1" });
+            });
+
+            services.AddOpenTelemetryTracing((builder) => builder
+                        .AddAspNetCoreInstrumentation()
+                        .AddHttpClientInstrumentation()
+                        .AddConsoleExporter());
+
+            // For options which can be bound from IConfiguration.
+            services.Configure<AspNetCoreInstrumentationOptions>(this.Configuration.GetSection("AspNetCoreInstrumentation"));
+
+            // For options which can be configured from code only.
+            services.Configure<AspNetCoreInstrumentationOptions>(options =>
+            {
+                options.Filter = (req) =>
+                {
+                    return req.Request.Host != null;
+                };
             });
         }
 
