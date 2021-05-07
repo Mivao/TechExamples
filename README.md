@@ -6,6 +6,7 @@ Categories listed below with links to documentation where possible, as well as o
 ## Application Performance Management (APM)
 - [New Relic](https://docs.newrelic.com/) 
 - [Jaeger, open source, end-to-end distributed tracing](https://www.jaegertracing.io/)
+   - [Jaeger Intro](https://www.youtube.com/watch?v=UNqilb9_zwY) 
 - [OpenTelemetry, log, metric, and trace exporter](https://opentelemetry.io/docs/) ([.NET client](https://github.com/open-telemetry/opentelemetry-dotnet))
 
 ## Operations
