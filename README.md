@@ -43,5 +43,6 @@ Categories listed below with links to documentation where possible, as well as o
 ## Other
 - [Dapper - a simple object mapper for .NET](https://github.com/DapperLib/Dapper)
 - [Polly - a .NET resilience and transient-fault-handling library](https://github.com/App-vNext/Polly)
+   - [A Video Tutorial on Polly](https://www.youtube.com/watch?v=yXzn6HxTufM&list=PLUOequmGnXxM1L_nj63YIWB8B5wdNk6dA&index=1) 
 - [Newtonsoft - JSON parsing, serialization, and deserialization](https://www.newtonsoft.com/json)
 - [Solace Event Broker](https://docs.solace.com/Solace-PubSub-Platform.htm)
