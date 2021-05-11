@@ -45,5 +45,7 @@ Categories listed below with links to documentation where possible, as well as o
 - [Dapper - a simple object mapper for .NET](https://github.com/DapperLib/Dapper)
 - [Polly - a .NET resilience and transient-fault-handling library](https://github.com/App-vNext/Polly)
    - [A Video Tutorial on Polly](https://www.youtube.com/watch?v=yXzn6HxTufM&list=PLUOequmGnXxM1L_nj63YIWB8B5wdNk6dA&index=1) 
+   - [Video about circuit breakers](https://youtu.be/JljTcjt798c)
+   - [How Netflix uses circuit breakers](https://netflixtechblog.com/making-the-netflix-api-more-resilient-a8ec62159c2d) (more interesting if you do some research into redis and cacheing)
 - [Newtonsoft - JSON parsing, serialization, and deserialization](https://www.newtonsoft.com/json)
 - [Solace Event Broker](https://docs.solace.com/Solace-PubSub-Platform.htm)
