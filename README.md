@@ -48,4 +48,10 @@ Categories listed below with links to documentation where possible, as well as o
    - [Video about circuit breakers](https://youtu.be/JljTcjt798c)
    - [How Netflix uses circuit breakers](https://netflixtechblog.com/making-the-netflix-api-more-resilient-a8ec62159c2d) (more interesting if you do some research into redis and cacheing)
 - [Newtonsoft - JSON parsing, serialization, and deserialization](https://www.newtonsoft.com/json)
+- [Redis - a key-value datastructure used for cacheing](https://redis.io/)
+   - [.NET docs on distributed cacheing](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/distributed?view=aspnetcore-5.0)
+   - [Setting up basic interactions with Redis](https://youtu.be/jwek4w6als4)
+   - [Custom middleware/attributes to cache responses](https://youtu.be/KboCpJGa9ag)
+   - [HTTP cacheing headers](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/response?view=aspnetcore-5.0)
+   - Unclear how to effectively use this with non-static data (like all of ours has been so far), would need to remove/invalidate the caches when data is modified.
 - [Solace Event Broker](https://docs.solace.com/Solace-PubSub-Platform.htm)
