@@ -54,4 +54,5 @@ Categories listed below with links to documentation where possible, as well as o
    - [Custom middleware/attributes to cache responses](https://youtu.be/KboCpJGa9ag)
    - [HTTP cacheing headers](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/response?view=aspnetcore-5.0)
    - Unclear how to effectively use this with non-static data (like all of ours has been so far), would need to remove/invalidate the caches when data is modified.
+   - [Interesting write up on cacheing considerations](https://lobster1234.github.io/2017/07/05/caching-gotchas-and-lessons-learned/)
 - [Solace Event Broker](https://docs.solace.com/Solace-PubSub-Platform.htm)
