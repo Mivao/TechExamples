@@ -31,6 +31,9 @@ Categories listed below with links to documentation where possible, as well as o
 - OAuth2.0 Flows, Grant Types, etc.
   - [Good LinkedIn course on OAuth2.0](https://www.linkedin.com/learning/web-security-oauth-and-openid-connect-2)
   - [OAuth playground](http://oauth.com/playground/)
+- [Identity Server](https://identityserver4.readthedocs.io/en/latest/)
+   - [Intro to setting up identity server](https://youtu.be/HJQ2-sJURvA)
+   - [Connecting a database](https://youtu.be/Sw1rScI20xM)
 - JOT Tokens
 - JWS Signing
 
